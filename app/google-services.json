@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "914573029280",
+    "project_id": "location-de-voiture-ee609",
+    "storage_bucket": "location-de-voiture-ee609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914573029280:android:241c43f6030f247791fec5",
+        "android_client_info": {
+          "package_name": "com.example.locationdevoiture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ltra3xjUIHdSktFnYMqPiEDa3lg6zYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
