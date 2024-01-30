@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LocationDeVoiture"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Activity.DeliveryFormActivity"
+            android:exported="false" />
         <activity
             android:name=".Activity.CartActivity"
             android:exported="false" />

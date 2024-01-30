@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -30,6 +31,15 @@ public class CartActivity extends BaseActivity {
         setVariable();
         calculateCart();
         initList();
+        checkOut();
+    }
+
+    private void checkOut() {
+        binding.checkOutBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(CartActivity.this,DeliveryFormActivity.class);
+            intent.putExtra("order",managmentCart.getListCart());
+            startActivity(intent);
+        });
     }
 
     private void initList() {

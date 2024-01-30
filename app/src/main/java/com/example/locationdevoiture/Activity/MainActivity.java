@@ -52,7 +52,7 @@ public class MainActivity extends BaseActivity {
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
         });
         binding.searchBtn.setOnClickListener(v -> {
-            String text = binding.searchEdit.getText().toString();
+            String text = binding.searchEdit.getText().toString().toUpperCase();
             if (!text.isEmpty()){
                 Intent intent = new Intent(MainActivity.this, ListCarsActivity.class);
                 intent.putExtra("text",text);

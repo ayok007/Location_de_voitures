@@ -25,6 +25,11 @@ public class SignupActivity extends BaseActivity {
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.editTextText2.setOnClickListener(v -> {
+            Intent intent = new Intent(SignupActivity.this,LoginActivity.class);
+            startActivity(intent);
+        });
+
         setVariable();
     }
 

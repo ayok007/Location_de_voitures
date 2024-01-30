@@ -84,7 +84,7 @@ public class BrandsAdapter extends RecyclerView.Adapter<BrandsAdapter.viewHolder
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, ListCarsActivity.class);
-            intent.putExtra("brandId",items.get(position).getId());
+            intent.putExtra("brandId",position);
             intent.putExtra("BrandName",items.get(position).getName());
             context.startActivity(intent);
         });

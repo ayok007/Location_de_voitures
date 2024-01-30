@@ -23,6 +23,11 @@ public class LoginActivity extends BaseActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.signUpBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this,SignupActivity.class);
+            startActivity(intent);
+        });
+
         setVariable();
 
     }

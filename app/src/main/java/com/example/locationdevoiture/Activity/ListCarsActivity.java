@@ -74,7 +74,7 @@ public class ListCarsActivity extends BaseActivity {
 
     private void getIntentExtra() {
         brandName = getIntent().getStringExtra("BrandName");
-        BrandId = getIntent().getIntExtra("brandId",1);
+        BrandId = getIntent().getIntExtra("brandId",0);
         searchText = getIntent().getStringExtra("text");
         isSearch = getIntent().getBooleanExtra("isSearch",false);
 
